@@ -32,8 +32,9 @@ $(function() {
   var map = L.map('map__box--1').setView([52.0688122, 19.4797444], zoomCountry);
 
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 18,
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    minZoom: 6,
+    maxZoom: 18,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a',
 		id: 'mapbox.streets'
 	}).addTo(map);
 
@@ -54,14 +55,20 @@ $(function() {
 							<p class='info__adress'>${place.adress}</p>
 							<p class="info__phone">${place.phone.join(', ')}</p>
 						</div>
-					`;
+					  `;
 
-						L.marker([place.location[0], place.location[1]]).bindPopup(infoPopup).addTo(map);
+            L.marker([place.location[0], place.location[1]]).bindPopup(infoPopup).on('click', markerOnClick).addTo(map);
 					});
 				}
 			});
 		});
   });
+
+  function markerOnClick(e) {
+    var latLngs = [e.target.getLatLng()];
+    var markerBounds = L.latLngBounds(latLngs);
+    map.fitBounds(markerBounds);
+  }
   
   regionSelect.change(function() {
     var points = [];

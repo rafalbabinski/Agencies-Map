@@ -143,14 +143,21 @@ body {
 /* AGENCIES */
 
 /* INFO WINDOW */
+.leaflet-popup-content p {
+    margin: 0;
+}
+
 .info {}
+
 .info__name {
     margin: 0 0 5px;
     font-weight: 700;
 }
+
 .info__adress {
     margin: 0 0 5px;
 }
+
 .info__button {
     display: block;
     margin: 0 auto;

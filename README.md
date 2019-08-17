@@ -1,6 +1,6 @@
 ### Agencies-Map
 
-Simple map application written with js (jQuery), which allows to present points on map, filter by states and cities.
+Simple map application, which allows to present points on map, filter by states and cities.
 
 Map powered by:
 * LeafletJs (https://leafletjs.com/) -> MiT License

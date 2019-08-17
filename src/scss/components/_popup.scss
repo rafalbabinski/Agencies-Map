@@ -1,0 +1,23 @@
+.leaflet-popup-content p {
+  margin: 0;
+}
+
+.info {
+  &__name {
+    margin: 0 0 5px;
+    font-weight: 700;
+  }
+  
+  &__adress {
+    margin: 0 0 5px;
+  }
+  
+  &__button {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #eee;
+    box-shadow: 0 0 3px 0 #555;
+  }
+}

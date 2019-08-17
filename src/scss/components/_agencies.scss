@@ -1,0 +1,49 @@
+.agencies {
+  display: none;
+  margin: 40px 0;
+
+  &.active {
+    display: block;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__item {
+    width: 25%;
+    margin: 0 0 20px;
+    padding: 0 10px;
+  }
+  
+  &__name {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1023px) {
+  .agencies__item {
+      width: 33.333%;
+  }
+}
+
+@media (max-width: 768px) {
+  .agencies__item {
+      width: 50%;
+  } 
+}
+
+@media (max-width: 576px) {
+  .agencies__item {
+      width: 100%;
+  } 
+}

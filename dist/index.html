@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agencies Map</title>
+    <link rel="icon" src=img/favicon.png >
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin-ext" rel="stylesheet">
+<link href="css/style.css?4c73e9cf3c0fe4a21fe5" rel="stylesheet"></head>
+<body>
+
+   <div class="map map--1">
+
+      <div class="container">
+         <h2 class="map__title">Agencies</h2>
+
+         <form class="map__form" action="/" method="get">
+            <div class="map__select">
+               <label for="region">Województwo:</label>
+               <select id="region" name="region">
+                  <option value="">- wybierz województwo -</option>
+                  <option value="dolnośląskie">dolnośląskie</option>
+                  <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                  <option value="lubelskie">lubelskie</option>
+                  <option value="lubuskie">lubuskie</option>
+                  <option value="łódzkie">łódzkie</option>
+                  <option value="małopolskie">małopolskie</option>
+                  <option value="mazowieckie">mazowieckie</option>
+                  <option value="opolskie">opolskie</option>
+                  <option value="podkarpackie">podkarpackie</option>
+                  <option value="podlaskie">podlaskie</option>
+                  <option value="pomorskie">pomorskie</option>
+                  <option value="śląskie">śląskie</option>
+                  <option value="świętokrzyskie">świętokrzyskie</option>
+                  <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+                  <option value="wielkopolskie">wielkopolskie</option>
+                  <option value="zachodniopomorskie">zachodniopomorskie</option>
+               </select>
+            </div>
+            <div class="map__select">
+               <label for="city">Miasto:</label>
+               <select id="city" name="city">
+                  <option value="">- wybierz miasto -</option>
+               </select>
+            </div>
+         </form>
+      </div>
+
+      <div class="map__box" id="map__box--1"></div>
+
+      <div class="container">
+         <div class="agencies">
+            <h3 class="agencies__title">Agencies List</h3>
+            <div class="agencies__list">
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+<script type="text/javascript" src="js/main.js?4c73e9cf3c0fe4a21fe5"></script></body>
+</html>

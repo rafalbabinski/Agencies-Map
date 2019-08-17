@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agencies Map</title>
-    <link rel="icon" type="image/png" sizes="64x64" href="./img/favicon.png">
+    <link rel="icon" src=<%=require("./img/favicon.png")%> >
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/leaflet.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 
@@ -24,7 +21,7 @@
             <div class="map__select">
                <label for="region">Województwo:</label>
                <select id="region" name="region">
-                  <option value="">-- wybierz województwo --</option>
+                  <option value="">- wybierz województwo -</option>
                   <option value="dolnośląskie">dolnośląskie</option>
                   <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
                   <option value="lubelskie">lubelskie</option>
@@ -46,7 +43,7 @@
             <div class="map__select">
                <label for="city">Miasto:</label>
                <select id="city" name="city">
-                  <option value="">-- wybierz miasto --</option>
+                  <option value="">- wybierz miasto -</option>
                </select>
             </div>
          </form>
@@ -65,11 +62,4 @@
    </div>
 
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="./js/map.js"></script>
-<script src="./js/leaflet.js">
-</script>
 </html>

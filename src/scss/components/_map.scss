@@ -1,0 +1,39 @@
+.map {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 0;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+  
+  &__form {
+    display: flex;
+    flex-wrap: wrap
+  }
+  
+  &__select {
+    margin: 0 40px 20px 0;
+    font-weight: 300;
+  }
+  
+  &__select select {
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid #555;
+    background: none;
+  }
+  
+  &__box {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    padding-bottom: 75%;
+    padding-top: 30px;
+    position: relative;
+  }
+}

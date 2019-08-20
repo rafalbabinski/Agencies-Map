@@ -8,4 +8,4 @@ Map powered by:
 
 Mix of them is good alternative to Google Maps Javascript API, in the opposite to which is free under the condition of providing source.
 
-## [DEMO](https://gracious-villani-63b50c.netlify.com/)
+## [LIVE](https://gracious-villani-63b50c.netlify.com/)

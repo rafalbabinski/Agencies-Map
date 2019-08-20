@@ -3,12 +3,12 @@ body {
   font-size: 16px;
   line-height: 1.3em;
   font-weight: 300;
-  background-color: #f1f1f1;
+  background-color: #f7f7f7;
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

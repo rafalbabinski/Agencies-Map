@@ -94,13 +94,13 @@ const map = () => {
     agenciesList.innerHTML = '';
     currCity.places.forEach(item => {
       let agency = `
-        <div class="agencies__item">
+        <li class="agencies__item">
           <p class="agencies__name">${item.name}</p>
           <p class="agencies__adress">${item.adress}</p>
           <div class="agencies__phone-box">
             ${item.phone.map(item => `<p class="agencies__phone">${item}</p>`).join('')}
           </div>
-        </div>`;
+        </li>`;
       
       agenciesList.innerHTML += agency;
     });

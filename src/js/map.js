@@ -9,19 +9,19 @@ const map = () => {
   let agenciesList = document.querySelector('.agencies__list');
 
   // Zoom level to fit whole country/city on mobile
-  let zoomCountry = (window.innerWidth < 1000 ) ? ((window.innerWidth - 320)*0.002352941) + 5.2 : 6.5;
+  let zoomCountry = (window.innerWidth < 1000 ) ? ((window.innerWidth - 320)*0.002352941) + 5 : 6;
   let zoomCity = (window.innerWidth < 1000 ) ? 2 : 0;
 
   let map = L.map('map__box--1').setView([52.0688122, 19.4797444], zoomCountry);
 
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    minZoom: 6,
+    minZoom: 5,
     maxZoom: 18,
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a',
 		id: 'mapbox.streets'
 	}).addTo(map);
 
-  fetch('https://api.myjson.com/bins/j24qq')
+  fetch('https://agencies-list-api.herokuapp.com/places')
   .then(data => data.json())
   .then(data => {
 		places = data;
